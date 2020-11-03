@@ -7,7 +7,7 @@ import config from "../../config.js";
 
 // Start of module
 
-// Function to pay from the group which is marked as a payment
+// Function to pay from the group which is marked as a payment group
 function groupPayEntityBySvid(toEntity, amount, auth) {
     // Call the base api + the correct route
     axios.get(`${config.base_api_url}/eco/SendTransactionByIDs`, {
@@ -51,7 +51,7 @@ function groupMakeSaleToEntity(toEntity, amount, auth) {
         });
 }
 
-// Export necessary functions
+// Export necessary functions 
 export {
     groupPayEntityBySvid,
     groupMakeSaleToEntity
